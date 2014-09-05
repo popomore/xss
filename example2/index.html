@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+  </head>
+  <body>
+    <p>注入到 script 中</p>
+    <p>输出变量 a</p>
+    <script type="text/javascript">
+      try{
+        parent.{{a}}();
+      } catch(e) {}
+    </script>
+  </body>
+</html>
